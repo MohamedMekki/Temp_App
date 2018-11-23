@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weath"
+    tools:context=".LogActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/b_temp"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="77dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="gotolog"
+        android:text="Temprature"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="showdata"
+        android:text="Show Temp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_con"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_temp" />
+
+    <Button
+        android:id="@+id/b_con"
+        android:layout_width="119dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="123dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="contactus"
+        android:text="Contact Us"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+</android.support.constraint.ConstraintLayout>
